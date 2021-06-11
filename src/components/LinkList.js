@@ -12,9 +12,11 @@ export const FEED_QUERY = gql`
   links{
     id
     url
+    description
     postedBy{
       id
       email
+      username
     }
     votes{
       edges{
@@ -24,8 +26,6 @@ export const FEED_QUERY = gql`
             id
             url
             description
-
-
           }
         }
       }
