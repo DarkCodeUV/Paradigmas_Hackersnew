@@ -67,6 +67,7 @@ const CreateLink = () => {
 //Crea funcion para lmandar a otro componente
   function clickHistory(){
     history.push("/");
+    window.location.reload()
   }
   function refreshPage(){
     window.location.reload()
@@ -106,7 +107,7 @@ const CreateLink = () => {
           />
         </div>
         <button type="submit"  onClick={ () => {
-          window.location.reload()
+        createLink()
           clickHistory() //Se llama a la funcion
 
         } }>Submit</button>
