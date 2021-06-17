@@ -48,7 +48,8 @@ const Link = (props) => {
           };
         }
         return feedLink;
-      });
+      } );
+
 
     cache.writeQuery({
         query: FEED_QUERY,
