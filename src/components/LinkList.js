@@ -38,7 +38,7 @@ const LinkList = () => {
     const { data } = useQuery(FEED_QUERY);
 
     return (
-  <div>
+    <div>
     {data && (
       <>
         {data.links.map((link, index) => (
@@ -47,7 +47,7 @@ const LinkList = () => {
       </>
     )}
   </div>
-);
+    );
   };
 
 export default LinkList;
