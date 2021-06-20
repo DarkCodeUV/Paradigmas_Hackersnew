@@ -39,6 +39,9 @@ const Search = () => {
 
   return (
     <>
+
+
+
       <div>
         Search
         <input
@@ -54,6 +57,7 @@ const Search = () => {
         >
           OK
         </button>
+
       </div>
       {data &&
         data.links.map((link, index) => (
