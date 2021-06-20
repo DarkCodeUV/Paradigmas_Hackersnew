@@ -13,11 +13,15 @@ input {
 }
 
 .orange {
-  background-color: #ff6600;
+  background-color: #5463e6;
+  font-size: 100%;
+  font-style: italic;
+  font-family:sans-serif;
+ 
 }
 
 .background-gray {
-  background-color: rgb(246, 246, 239);
+  background-color: rgb(255, 255, 255);
 }
 
 .f11 {

@@ -39,9 +39,10 @@ const authLink = setContext((_, { headers }) => {
   };
 });
 
+
 /*
 const wsLink = new WebSocketLink({
-  uri: `ws:35.232.232.192:8086/graphql/`,
+  uri: `ws:35.232.232.192:8086/ws/`,
   options: {
     reconnect: true,
     connectionParams: {
@@ -50,10 +51,9 @@ const wsLink = new WebSocketLink({
 
   }
 });
+*
 
-*/
 
-/*
 const link = split(
   ({ query }) => {
     const { kind, operation } = getMainDefinition(query);

@@ -15,31 +15,24 @@ const Header = () => {
   return (
     <div className="flex pa1 justify-between nowrap orange">
       <div className="flex flex-fixed black">
-        <div className="fw7 mr1">Hacker News</div>
-        <Link to="/" className="ml1 no-underline black">
-          new
-        </Link>
 
-	<div className="ml1">|</div>
-        <Link to="/top" className="ml1 no-underline black">
-          top
-        </Link>
+        
+        <Link to="/home" className="fw7 mr1 no-underline black"> Paradigmas </Link>
+
 
         <div className="ml1">|</div>
-        <Link to="/search" className="ml1 no-underline black">
-          search
-        </Link>
+        <Link to="/top" className="ml1 no-underline black"> Top </Link>
+
+        <div className="ml1">|</div>
+        <Link to="/search" className="ml1 no-underline black"> Buscar </Link>
 
         {authToken && (
           <div className="flex">
             <div className="ml1">|</div>
-	<Link to="/create"
-          className="ml1 no-underline black"
-        >
-         submit
-            </Link>
-          </div>
+            <Link to="/create" className="ml1 no-underline black"> Agregar Link</Link>
+        </div>
         )}
+
       </div>
       <div className="flex flex-fixed">
         {authToken ? (
@@ -52,18 +45,27 @@ const Header = () => {
 
             }}
           >
-            logout
+            Salir
           </div>
         ) : (
-          <Link
-            to="/login"
-            className="ml1 no-underline black"
-          >
-            login
-          </Link>
+          <Link to="/login" className="ml1 no-underline black" > Ingresar </Link>
+          
         )}
+        
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
   );
 };
 
