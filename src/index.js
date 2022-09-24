@@ -11,6 +11,7 @@ import { split } from '@apollo/client';
 import { WebSocketLink } from '@apollo/client/link/ws';
 import { getMainDefinition } from '@apollo/client/utilities';
 
+
 // 1
 import {
   ApolloProvider,
@@ -26,7 +27,7 @@ import {
 
 
 const httpLink = createHttpLink({
-   uri: 'http://35.232.232.192:8086/graphql/'
+   uri: 'http://127.0.0.1:8000/graphql/'
 });
 
 const authLink = setContext((_, { headers }) => {

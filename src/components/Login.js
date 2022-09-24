@@ -60,7 +60,7 @@ const [login] = useMutation(LOGIN_MUTATION, {
   onCompleted: ({ tokenAuth }) => {
     console.log(tokenAuth);
     localStorage.setItem(AUTH_TOKEN, tokenAuth.token);
-    history.push('/');
+    history.push('/create');
   }
 });
 
@@ -132,6 +132,9 @@ const [signup] = useMutation(SIGNUP_MUTATION, {
     className="pointer mr2 button"
     onClick={() => {
       //formState.login ? login : signup ()
+      console.log(formState.login);
+      console.log(formState.email);
+      console.log(formState.password);
       if (formState.login ) {
         login(formState.username, formState.password ).then(()=>{
           window.location.reload()
@@ -147,19 +150,9 @@ const [signup] = useMutation(SIGNUP_MUTATION, {
 
 
   </button >
-  <button
-    className="pointer button"
-    onClick={(e) =>
-      setFormState({
-        ...formState,
-        login: !formState.login
-      })
-    }
-  >
-          {formState.login
-            ? 'need to create an account?'
-            : 'already have an account?'}
-        </button>
+ 
+
+      
       </div>
     </div>
   );

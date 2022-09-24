@@ -17,19 +17,10 @@ const Header = () => {
       <div className="flex flex-fixed black">
 
         
-        <Link to="/home" className="fw7 mr1 no-underline black"> Paradigmas </Link>
-
-
-        <div className="ml1">|</div>
-        <Link to="/top" className="ml1 no-underline black"> Top </Link>
-
-        <div className="ml1">|</div>
-        <Link to="/search" className="ml1 no-underline black"> Buscar </Link>
-
         {authToken && (
           <div className="flex">
             <div className="ml1">|</div>
-            <Link to="/create" className="ml1 no-underline black"> Agregar Link</Link>
+            <Link to="/create" className="ml1 no-underline black"> Modificar CV</Link>
         </div>
         )}
 
